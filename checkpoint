@@ -1,0 +1,6 @@
+model_checkpoint_path: "my_network_end.ckpt-59"
+all_model_checkpoint_paths: "my_network_epoch40.ckpt-40"
+all_model_checkpoint_paths: "my_network_epoch45.ckpt-45"
+all_model_checkpoint_paths: "my_network_epoch50.ckpt-50"
+all_model_checkpoint_paths: "my_network_epoch55.ckpt-55"
+all_model_checkpoint_paths: "my_network_end.ckpt-59"

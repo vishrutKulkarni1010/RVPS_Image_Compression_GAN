@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Compression System</title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+	<header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Welcome to Image Compression System</h1>
+      <p class="lead">one line summary of what the system does</p>
+    </div>
+  	</header>
+	<br>
+    <form action = "/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+        <div class="col-lg-4 mx-auto">
+            <input type="text" id="input1" placeholder="Patient's Name" class="form-control mb-3 px-4 py-2 rounded-pill bg-white shadow-lg border-0" required>
+            <br>
+            <input type="date" id="input1" class="form-control mb-3 px-4 py-2 rounded-pill bg-white shadow-lg border-0" required>
+            <br>
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-lg">    
+                <input id="upload" type="file" accept="image/*"onchange="readURL(this);" class="form-control border-0" name="file">
+                <label id="upload-label"  for="upload" class="font-weight-light text-muted">Choose file</label>
+                <div class="input-group-append">
+                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> 
+                    	<small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                </div>
+            </div>
+
+            <p class="font-italic text-white text-center">The image uploaded will be rendered inside the box below.</p>
+
+            <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+            <br>
+            <button type="submit" class="btn btn-success" id="button1">Compress</button>
+            <br>
+            <br>
+        </div>
+    </form>
+	<script type="text/javascript" src="static/js/js1.js"></script>
+	<script type="text/javascript" src="static/js/jquery-3.5.0.slim.min.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
